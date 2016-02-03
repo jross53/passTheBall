@@ -1,0 +1,11 @@
+CREATE TABLE players
+(
+    playerId,
+    name,
+    teamId,
+    rank,
+    Primary Key(playerId,teamId),
+    Foreign Key(teamId) references teams(teamId)
+)
+
+
